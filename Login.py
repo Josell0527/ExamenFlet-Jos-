@@ -5,9 +5,7 @@ def main(page: ft.Page):
 
     #Ejercicio 6
     def comprobardatos(e):
-        nom= tfnombre.value
-        contra= tfpassword.value
-        if nom ==contra:
+        if tfnombre.value ==tfpassword.value:
             dlg = ft.AlertDialog(title=ft.Text("Usuario y contraseña introducidos correctamente"), on_dismiss=lambda e: print("Usuario y contraseña introducidos correctamente!"))
             page.dialog = dlg
             dlg.open = True
